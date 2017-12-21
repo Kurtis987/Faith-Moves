@@ -1,0 +1,109 @@
+.caret {
+	position: absolute;
+	right: 33px; 
+}
+
+.glyphicon-plus {
+	position: absolute;
+	right: 30px;
+	top: 13px;
+}
+
+footer {
+	background: aliceblue;
+	bottom: 0;
+	padding: 15px;
+	position: absolute;
+	width: 100%;
+}
+
+.icon-bar {
+	background-color: #337ab7;
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+nav {
+	background: aliceblue;
+}
+
+.navbar-collapse {
+	padding: 20px 0 0 0;
+}
+
+.navbar-nav {
+	margin: 0 -15px;
+}
+.navbar-toggle {
+	border-color: #337ab7;
+}
+
+ul.nav li a:hover, .navbar-right > li > a:active, 
+.navbar-right > li > a:visited,
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus,
+.nav > li > a:focus, .nav > li > a:hover, .navbar-toggle:hover {
+	background: lightblue;
+}
+
+ul.nav > li {
+	border-bottom: 1px solid lightblue;
+}
+
+@media (min-width: 768px){
+	.caret, .glyphicon-plus { 
+		left: 2px;
+		position: relative;
+	}
+	.container-fluid {
+    	padding: 10 15px 0 15px;
+	}
+	footer {
+		padding: 15px 40px;
+	}
+	.nav > li > a {
+		padding: 20px 15px;
+	}
+	.navbar-brand {
+		padding-left: 40px;
+		margin: 0;
+		/*height: 120px; */
+	}
+	.navbar-collapse {
+		margin-top: -20px;
+		padding-right: 25px;
+	}
+	.navbar-right .dropdown-menu {
+		left: 0;
+		right: auto;
+	}
+	ul.nav > li {
+		border: 0;
+	}
+
+}
+
+@media (min-width: 1071px) {
+	.container-fluid {
+    	padding: 0 80px;
+	}
+	footer {
+		padding: 15px 80px;
+	}
+	.navbar-brand {
+		padding-left: 15px;
+		margin: 0;
+		height: 120px; 
+	}
+	.navbar-collapse {
+		padding: 53px 0 0 0;
+	}
+	ul.nav li a:hover, .navbar-right > li > a:active, 
+	.navbar-right > li > a:visited,
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus,
+	.nav > li > a:focus, .nav > li > a:hover, .navbar-toggle:hover {
+		background: aliceblue;
+	}
+}
