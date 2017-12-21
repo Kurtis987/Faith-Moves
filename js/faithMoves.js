@@ -30,10 +30,4 @@ function selectStyle() {
     	$("span.glyphicon-plus").removeClass("glyphicon").removeClass("glyphicon-plus").addClass("caret");
     	
     }
-    if($(window).width() >= 1071) {
-    	$("#logo").replaceWith("<img id='logo' src='img/FaithMovesLogoLarge.png' alt='Faith Moves Logo' width='444' height='105'>");
-    }
-    else {
-    	$("#logo").replaceWith("<img id='logo' src='img/FaithMovesLogoSmall.png' alt='Faith Moves Logo' width='185' height='41'>");
-    }
 }
