@@ -1,0 +1,19 @@
+{
+  "name": "faith-moves",
+  "version": "1.0.0",
+  "description": "Faith based radio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kurtis987/Faith-Moves.git"
+  },
+  "author": "Kurtis Lunz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kurtis987/Faith-Moves/issues"
+  },
+  "homepage": "https://github.com/Kurtis987/Faith-Moves#readme"
+}

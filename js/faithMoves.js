@@ -14,18 +14,12 @@ $(document).ready(function() {
 });
 
 
-    /* use css of an element to see
-       which media query we're using
-       then select the correct class
-       once we determine the screen size */
-function selectStyle() {
-    //if ($(".caret").css("position") == "absolute" ) {
+function selectStyle() { 
     if($(window).width() <= 767) {
     	//screen is < 768px switch to glyphicon-plus
         $("span.caret").removeClass("caret").addClass("glyphicon").addClass("glyphicon-plus");
     }
-    else {
-    //if($(".glyphicon-plus").css("left") == "2px") {
+    else { 
     	//screen is >= 768 switch to caret
     	$("span.glyphicon-plus").removeClass("glyphicon").removeClass("glyphicon-plus").addClass("caret");
     	

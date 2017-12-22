@@ -1,0 +1,21 @@
+{
+  "name": "faith-moves",
+  "description": "Faith based radio",
+  "main": "index.js",
+  "authors": [
+    "Kurtis Lunz"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Kurtis987/Faith-Moves",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8"
+  }
+}
