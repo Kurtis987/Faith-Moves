@@ -1,6 +1,7 @@
 angular.module('RouteControllers', [])
 	.controller('HomeController', function($scope) {
 		$scope.title = "Welcome to Faith Moves Radio!"; 
+
 	})
 	.controller('NavController', function($scope) {
 
@@ -26,6 +27,6 @@ angular.module('RouteControllers', [])
 	.controller('SongsController', function($scope, $location) {
 
 	})
-	.controller('VersesController', function($scope, $location) {
-
+	.controller('VersesController', function($scope, $location, $rootScope) {
+		console.log($rootScope.VerseOfDay);
 	});

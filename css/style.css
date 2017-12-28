@@ -1,3 +1,9 @@
+body {
+	min-height: 100%;
+	padding-bottom: 69px;
+	position: relative;
+}
+
 .caret {
 	position: absolute;
 	right: 33px; 
@@ -17,6 +23,10 @@ footer {
 	width: 100%;
 }
 
+html {
+	height: 100%;
+}
+
 .icon-bar {
 	background-color: #337ab7;
 }
@@ -30,8 +40,9 @@ nav {
 	background: aliceblue;
 }
 
-.navbar-collapse {
-	padding: 20px 0 0 0;
+.navbar-brand { 
+    height: 71px; 
+    line-height: 41px;
 }
 
 .navbar-nav {
@@ -39,6 +50,7 @@ nav {
 }
 .navbar-toggle {
 	border-color: #337ab7;
+	margin: 18.5px 15px 18.5px 0;
 }
 
 ul.nav li a:hover, .navbar-right > li > a:active, 
@@ -65,14 +77,13 @@ ul.nav > li {
 		padding: 15px 40px;
 	}
 	.nav > li > a {
-		padding: 20px 15px;
+		padding: 25.5px 15px;
 	}
 	.navbar-brand {
 		padding-left: 40px;
 		margin: 0; 
 	}
-	.navbar-collapse {
-		margin-top: -20px;
+	.navbar-collapse { 
 		padding-right: 25px;
 	}
 	.navbar-right .dropdown-menu {
