@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Kurtis987/Faith-Moves/issues"
   },
-  "homepage": "https://github.com/Kurtis987/Faith-Moves#readme"
+  "homepage": "https://github.com/Kurtis987/Faith-Moves#readme",
+  "dependencies": {
+    "angular-module-sanitize": "^1.2.19"
+  }
 }

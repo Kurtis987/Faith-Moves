@@ -53,6 +53,10 @@ nav {
 	margin: 18.5px 15px 18.5px 0;
 }
 
+.red-letter {
+	color: red;
+}
+
 ul.nav li a:hover, .navbar-right > li > a:active, 
 .navbar-right > li > a:visited,
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus,
