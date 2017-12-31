@@ -16,15 +16,6 @@ angular.module('RouteControllers', [])
 
 	})
 	.controller('LyricsController', function($scope, $location) {
-
-	})
-	.controller('MusicController', function($scope, $location) {
-
-	})
-	.controller('PrayerController', function($scope, $location) {
-
-	})
-	.controller('SongsController', function($scope, $location) {
 		$scope.lyrics = [];
 		$scope.lyrics[0] = ["Dominic Balli - Warrior","My heart is overflowing with a good theme \n" +
 			"I recite my composition concerning the King \n" +
@@ -100,8 +91,8 @@ angular.module('RouteControllers', [])
 			"Look up for something better \n" +
 			"The son is on his way \n" +
 			"So carefully walk and seize the day \n" +
-			" \n" +
-			"/*Chorus:*/ \n" +
+			" \n"+
+			"Chorus: \n" +
 			"We must arise \n" +
 			"We must arise \n" +
 			"We must arise \n" +
@@ -116,9 +107,9 @@ angular.module('RouteControllers', [])
 			"Live on for something better \n" +
 			"Look up for something better \n" +
 			"Wake up from your dreaming \n" +
-			"And march on like you got some reason to believe in \n" +
-			" \n" +
-			"/*Chorus*/ \n" +
+			"And march on like you got some reason to believe in \n "+
+			" \n"+
+			"Chorus: \n" +
 			" \n" +
 			"We got to take up our bed and arise \n" +
 			"We got to take up our bed and arise \n" +
@@ -128,7 +119,8 @@ angular.module('RouteControllers', [])
 			"Move on seize the day \n" +
 			"Rise up from the grave \n" +
 			"Move on seize the day \n" +
-			"We must arise"];
+			"We must arise"
+			];
 
 		$scope.lyrics[3] = ["Dominic Balli - Bread for the Broken",'"Bread for the Broken (feat. Speech of Arrested Development)" Lyrics \n'+
 			"by Dominic Balli | from the album Public Announcement \n" +
@@ -140,7 +132,7 @@ angular.module('RouteControllers', [])
 			"No one cares, so no one try \n" +
 			"I see children in the night \n" +
 			" \n" +
-			"/*Chorus:*/ \n" +
+			"\/*Chorus:*\/ \n" +
 			"We need bread for the broken \n" +
 			"We need bread for the broken \n" +
 			"Give some hope to the hopeless \n" +
@@ -153,7 +145,7 @@ angular.module('RouteControllers', [])
 			"No one care, so no one try \n" +
 			"I see children in the night \n" +
 			" \n" +
-			"/*Chorus:*/ \n" +
+			"\/\*Chorus:\*\/ \n" +
 			" \n" +
 			"I cannot live my life daily knowin I am connected to you \n" +
 			"So what am I to do \n" +
@@ -760,7 +752,7 @@ angular.module('RouteControllers', [])
 			"Bow down before Him worship and adore Him  \n"+
 			"Give Jesus Christ the highest praise \n"];
 
-		$scope.lyrics[20] = ["Lyrics for Close To You by DJ Nicholas feat. Kevin Smith & Jermaine Edwards",
+		$scope.lyrics[20] = ["DJ Nicholas feat. Kevin Smith & Jermaine Edwards - Close To You",
 			"Bless Your name Jesus \n"+
 			"Yooo \n"+
 			" \n"+
@@ -1196,9 +1188,27 @@ angular.module('RouteControllers', [])
 			"Like Jacki Valesquez I get on my knees I realize my problem is just bun and cheese \n"+
 			"He's here with me and He will never leave \n"+
 			"The cross still bleed, the cross still bleed (yes) \n"+
-			" \n"]; 
+			" \n"];
+
+		//scroll to top of active panel
+		//https://stackoverflow.com/questions/21958933/bootstrap-accordion-scroll-to-top-of-active-panel-heading
+		//Credit to Xelio for this fix
+    	$('#accordion').on('show.bs.collapse', '.panel-default', function () {
+       		$('html,body').animate({
+        		scrollTop: $(this).offset().top
+    		}, 500); 
+		});
+	})
+	.controller('MusicController', function($scope, $location) {
+
+	})
+	.controller('PrayerController', function($scope, $location) {
+
+	})
+	.controller('SongsController', function($scope, $location) {
+		
+
  
 	})
 	.controller('VersesController', function($scope, $location, $rootScope) {
-		console.log($rootScope.VerseOfDay);
 	});

@@ -53,6 +53,9 @@ nav {
 	margin: 18.5px 15px 18.5px 0;
 }
 
+.panel-body {
+	white-space: pre-line;
+}
 .red-letter {
 	color: red;
 }
