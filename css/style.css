@@ -9,10 +9,19 @@ body {
 	right: 33px; 
 }
 
+#email {
+	margin-bottom: 0;
+	width:100%;
+}
+
 .glyphicon-plus {
 	position: absolute;
 	right: 30px;
 	top: 13px;
+}
+
+.first {
+	float: left;
 }
 
 footer {
@@ -23,6 +32,17 @@ footer {
 	width: 100%;
 }
 
+form { 
+	margin: 0 auto;
+	max-width: 600px;
+}
+.form-group {
+	text-align: center;
+}
+#form-submit {
+ text-align: center;
+}
+
 html {
 	height: 100%;
 }
@@ -31,9 +51,30 @@ html {
 	background-color: #337ab7;
 }
 
+input {
+	border: 1px solid #b8bfc4;
+	border-radius: 5px;
+	height: 40px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+label {
+	display: inline-block;
+	width: 80px;
+}
+
+.last {
+	float: right;
+}
+
 #logo {
 	display: inline-block;
 	vertical-align: text-bottom;
+}
+
+.name-input {
+	width: 47%;
 }
 
 nav {
@@ -56,9 +97,21 @@ nav {
 .panel-body {
 	white-space: pre-line;
 }
+
+#prayer-request {
+	margin-bottom: 30px;	
+	text-align: center;
+}
 .red-letter {
 	color: red;
 }
+
+textarea {
+  	border: 1px solid #b8bfc4;
+  	border-radius: 5px;
+  	padding: 10px;
+	width: 100%;
+} 
 
 ul.nav li a:hover, .navbar-right > li > a:active, 
 .navbar-right > li > a:visited,
@@ -70,7 +123,6 @@ ul.nav li a:hover, .navbar-right > li > a:active,
 ul.nav > li {
 	border-bottom: 1px solid lightblue;
 }
-
 
 @media (min-width: 768px){
 	.caret, .glyphicon-plus { 
@@ -87,8 +139,8 @@ ul.nav > li {
 		padding: 25.5px 15px;
 	}
 	.navbar-brand {
+		margin: 0;
 		padding-left: 40px;
-		margin: 0; 
 	}
 	.navbar-collapse { 
 		padding-right: 25px;
