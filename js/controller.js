@@ -18,12 +18,8 @@ angular.module('RouteControllers', [])
 		$scope.play = function() {
 			if ($scope.player.paused) {
 				$scope.player.play();
-				//pButton.className = "";
-				//pButton.className = "pause";
 			} else {
 				$scope.player.pause();
-				//pButton.className = "";
-				//pButton.className = "play";
 			}
 		};
 	})
