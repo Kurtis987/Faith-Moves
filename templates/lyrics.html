@@ -5,11 +5,11 @@
 		    <div ng-repeat="song in lyrics" class="panel panel-default">
 		      <div class="panel-heading">
 		        <h4 id="header{{$index}}" class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">{{song[0]}}</a>
+		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">{{song[0]}} - {{song[1]}}</a>
 		        </h4>
 		      </div>
 		      <div id="collapse{{$index}}" class="panel-collapse collapse">
-		        <div class="panel-body" ng-bind-html="song[1]"></div>
+		        <div class="panel-body" ng-bind-html="song[2]"></div>
 		      </div>
 		    </div>
 		  </div> 

@@ -66,7 +66,7 @@ angular.module('FaithMovesApp').config(function($locationProvider, $routeProvide
 	})
 	.when('/artists', {
 		templateUrl: 'templates/artists.html',
-		controller: 'AboutController'
+		controller: 'ArtistsController'
 	})
 	.when('/lyrics', {
 		templateUrl: 'templates/lyrics.html',

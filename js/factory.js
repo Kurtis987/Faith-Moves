@@ -1,7 +1,7 @@
-angular.module('SongHandler', [])
+﻿angular.module('SongHandler', [])
 	.factory('SongFactory', function() {
 			var songs = [];
-			songs[0] = ["Dominic Balli - Warrior","My heart is overflowing with a good theme \n" +
+			songs[0] = ["Dominic Balli","Warrior","My heart is overflowing with a good theme \n" +
 				"I recite my composition concerning the King \n" +
 				"My tongue is like the pen of a ready writer (Selah) \n" +
 				"My God when you came out before your people \n" +
@@ -39,7 +39,7 @@ angular.module('SongHandler', [])
 				"Hot up in the battle in valley of the \n" +
 				"Shadow of a gallow and I'm runnin with a fella that I'm honored just to follow"];
 
-			songs[1] = ["Dominic Balli - Drink for Free",'"Drink for Free" Lyrics \n' +
+			songs[1] = ["Dominic Balli","Drink for Free",'"Drink for Free" Lyrics \n' +
 				"by Dominic Balli | from the album Public Announcement \n" +
 				"Can you tell me wise man, what my life's about \n" +
 				"Cuz I read somewhere, that he made me for his pleasure \n" + 
@@ -62,7 +62,7 @@ angular.module('SongHandler', [])
 				"Come come unto the waters \n" + 
 				'and drink yourself to life'];
 
-			songs[2] = ["Dominic Balli - Arise",'"Arise" Lyrics \n'+	
+			songs[2] = ["Dominic Balli","Arise",'"Arise" Lyrics \n'+	
 				"by Dominic Balli | from the album Public Announcement \n" +
 				"  \n" +
 				" \n" +
@@ -106,7 +106,7 @@ angular.module('SongHandler', [])
 				"We must arise"
 				];
 
-			songs[3] = ["Dominic Balli - Bread for the Broken",'"Bread for the Broken (feat. Speech of Arrested Development)" Lyrics \n'+
+			songs[3] = ["Dominic Balli","Bread for the Broken",'"Bread for the Broken (feat. Speech of Arrested Development)" Lyrics \n'+
 				"by Dominic Balli | from the album Public Announcement \n" +
 				"  \n" +
 				" \n" +
@@ -143,7 +143,7 @@ angular.module('SongHandler', [])
 				"Let me paint the picture of humans through our lovin and given \n" +
 				"We need bread"];
 
-			songs[4] = ["Morgan Heritage - Take up your cross","I've seen the Son of Man, you know he's going there \n"+
+			songs[4] = ["Morgan Heritage","Take up your cross","I've seen the Son of Man, you know he's going there \n"+
 				"\n"+
 				"With a voice much louder than the rolling thunder \n"+
 				"And his presence causing the earth to tremble, yeah \n"+
@@ -196,7 +196,7 @@ angular.module('SongHandler', [])
 				"Songwriters: Dean Ivanhoe Fraser / Denroy Morgan / Memmalatel Morgan / Nakhamyah Morgan / Peter Anthony Morgan / V Morgan \n"+
 				"Take Up Your Cross lyrics © BMG Rights Management US, LLC"];
 				
-			songs[5] = ["Bunny Rugs - Praise Him","Written by: Bunny Rugs and Dan Geary \n"+
+			songs[5] = ["Bunny Rugs","Praise Him","Written by: Bunny Rugs and Dan Geary \n"+
 				"c-2006 COF Music, Inc. \n"+
 				"Publishing: Raw Edge Planet (ASCAP) \n"+
 				" \n"+
@@ -257,7 +257,7 @@ angular.module('SongHandler', [])
 				"Praise him, praise him \n"+
 				"He gave me a song to sing"];
 
-			songs[6] = ["George Nooks - God is Standing By","Lyrics for God Is Standing By by George Nooks \n"+
+			songs[6] = ["George Nooks","God is Standing By","Lyrics for God Is Standing By by George Nooks \n"+
 				" \n"+
 				"when you have troubles \n"+
 				"don't cry nooooooo \n"+
@@ -293,7 +293,7 @@ angular.module('SongHandler', [])
 				"sooooo don't you worry and don't cry \n"+
 				"don't cry ×12 \n"];
 
-			songs[7] = ["Tashai Houston - Sheltered in the arms of God","I feel the touch of hands so warm and tender \n"+
+			songs[7] = ["Tashai Houston","Sheltered in the arms of God","I feel the touch of hands so warm and tender \n"+
 				"They're leading me in the path that I must trod \n"+
 				"I have no fear for Jesus walks beside me \n"+
 				"And I'm sheltered in the arms of God \n"+
@@ -323,7 +323,7 @@ angular.module('SongHandler', [])
 				"And naught of earth can harm me  \n"+
 				"For I am sheltered within the arms of God \n"];
 
-			songs[8] = ["Sam Cooke and the Soul Stirrers - Touch the hem of his garment",
+			songs[8] = ["Sam Cooke and the Soul Stirrers","Touch the hem of his garment",
 				"Whoa, there was a woman in the Bible days \n"+
 				"She had been sick, \n"+
 				"Sick so very long \n"+
@@ -357,7 +357,7 @@ angular.module('SongHandler', [])
 				'Said "if I could just touch the hem of your garment \n'+
 				'I know I\'ll be made whole right now" \n'];
 
-			songs[9] = ["Sam Cooke and the Soul Stirrers - the last mile of the way",
+			songs[9] = ["Sam Cooke and the Soul Stirrers","the last mile of the way",
 				"If I walk in the pathway of duty \n"+
 				"If I work 'til the close of the day,  \n"+
 				"Lord \n"+
@@ -380,7 +380,7 @@ angular.module('SongHandler', [])
 				"For I know, there are joy awaiting \n"+
 				"When I've gone the last mile of the way \n"];
 
-			songs[10] = ["Sam Cooke and the Soul Stirrers - That's heaven to me",
+			songs[10] = ["Sam Cooke and the Soul Stirrers","That's heaven to me",
 				"The things that I see \n"+
 				"As I walk along the streets \n"+
 				"That's heaven to me \n"+
@@ -412,7 +412,7 @@ angular.module('SongHandler', [])
 				" \n"+
 				"Woah woah, woah woah, woah Lord \n"];
 
-			songs[11] = ["Sam Cooke and the Soul Stirrers - Pilgrim of Sorrow",
+			songs[11] = ["Sam Cooke and the Soul Stirrers","Pilgrim of Sorrow",
 				"Lord, I'm poor pilgrim of sorrow \n"+
 				"Down in this world, I'm all alone \n"+
 				"I have no hope for tomorrow \n"+
@@ -434,7 +434,7 @@ angular.module('SongHandler', [])
 				"That's when I heard of a city called Glory \n"+
 				"And oh, I'm trying to make that city my home \n"];
 
-			songs[12] = ["Sam Cooke and the Soul Stirrers - He's so wonderful",
+			songs[12] = ["Sam Cooke and the Soul Stirrers","He's so wonderful",
 				"Wonderful, God is so wonderful \n"+
 				"he's wonderful, God he's wonderful \n"+
 				" \n"+
@@ -458,7 +458,7 @@ angular.module('SongHandler', [])
 				" \n"+
 				"and O, I love God, he's so wonderful \n"];
 
-			songs[13] = ["The Blind Boys of Alabama -  Wade in the Water",
+			songs[13] = ["The Blind Boys of Alabama","Wade in the Water",
 				"Wade in the water \n"+ 
 				"Come on and \n"+
 				"Wade in the water children \n"+
@@ -521,7 +521,7 @@ angular.module('SongHandler', [])
 				"Songwriters: Chris Goldsmith / John Chelew / The Blind Boys Of Alabama \n"+
 				"Wade in the Water lyrics © BMG Rights Management US, LLC \n"];
 
-			songs[14] = ["The Blind Boys of Alabama - People Get Ready",
+			songs[14] = ["The Blind Boys of Alabama","People Get Ready",
 				"People get ready \n"+
 				"There's a train a-coming \n"+
 				"You don't need no baggage \n"+
@@ -562,7 +562,7 @@ angular.module('SongHandler', [])
 				"Songwriters: Curtis Mayfield \n"+
 				"People Get Ready lyrics © Sony/ATV Music Publishing LLC, Warner/Chappell Music, Inc \n"];
 
-			songs[15] = ["The Blind Boys of Alabama - Amazing Grace",
+			songs[15] = ["The Blind Boys of Alabama","Amazing Grace",
 				"Amazing grace, how sweet the sound \n"+
 				"That sav'd a wretch like me! \n"+
 				"I once was lost, but now am found, \n"+
@@ -597,7 +597,7 @@ angular.module('SongHandler', [])
 				" \n"+
 				"John Newton, Olney Hymns (London: W. Oliver, 1779) \n"];
 
-			songs[16] = ["Away From You -The O.C. Supertones",
+			songs[16] = ["Away From You","The O.C. Supertones",
 				"Say you got a minute friend \n"+
 				"Because I'd like to tell you something \n"+
 				"You may think nothing of it \n"+
@@ -634,7 +634,7 @@ angular.module('SongHandler', [])
 				"Songwriters: Alan Tatum / Bobby West / Lawrence Johnson \n"+
 				"Away From You lyrics © Sony/ATV Music Publishing LLC \n"];
 
-			songs[17] = ["George nooks - How Great Thou Art",
+			songs[17] = ["George nooks","How Great Thou Art",
 				"O Lord my God, when I in awesome wonder \n"+
 				"Consider all the worlds Thy hands have made; \n"+
 				"I see the stars, I hear the rolling thunder \n"+
@@ -674,7 +674,7 @@ angular.module('SongHandler', [])
 				"Then I shall bow, in humble adoration \n"+
 				'And then proclaim: "My God, how great Thou art!" \n'];
 
-			songs[18] = ["George Nooks - Give Thanks",
+			songs[18] = ["George Nooks","Give Thanks",
 				"Give thanks \n"+
 				"With a grateful heart \n"+
 				"Give thanks \n"+
@@ -696,7 +696,7 @@ angular.module('SongHandler', [])
 				"Because of what the Lord \n"+
 				"Has done for us \n"];
 
-			songs[19] = ["Wayne Stoddart - highest praise",
+			songs[19] = ["Wayne Stoddart","highest praise",
 				'"Enter into his gates with thanksgiving and into his courts with praise!" \n'+
 				"CHORUS \n"+
 				"Let me hear you praise Him, \n"+
@@ -736,7 +736,7 @@ angular.module('SongHandler', [])
 				"Bow down before Him worship and adore Him  \n"+
 				"Give Jesus Christ the highest praise \n"];
 
-			songs[20] = ["DJ Nicholas feat. Kevin Smith & Jermaine Edwards - Close To You",
+			songs[20] = ["DJ Nicholas feat. Kevin Smith & Jermaine Edwards","Close To You",
 				"Bless Your name Jesus \n"+
 				"Yooo \n"+
 				" \n"+
@@ -860,7 +860,7 @@ angular.module('SongHandler', [])
 				"Wire mouse to the cord \n"+
 				"A mi source a di Lord \n"];
 
-			songs[21] = ["Avion Blackman - Got To Be",
+			songs[21] = ["Avion Blackman","Got To Be",
 				"The Spirit of the Lord I've got to be, \n"+
 				"Got to be, got to be. \n"+
 				"Walking in the presence of the Almighty, \n"+
@@ -924,7 +924,7 @@ angular.module('SongHandler', [])
 				"Walking in the presence of the Almighty, \n"+
 				"Almighty, Almighty. \n"];
 
-			songs[22] = ["Avion Blackman - Joy Of The Lord",
+			songs[22] = ["Avion Blackman","Joy Of The Lord",
 				"I can't explain \n"+
 				"The way You heal my heart \n"+
 				"When I'm in pain \n"+
@@ -986,7 +986,7 @@ angular.module('SongHandler', [])
 				"The joy of the Lord \n"+
 				"Is my song - is my song \n"];
 
-			songs[23] = ["Avion Blackman - Day And Night",
+			songs[23] = ["Avion Blackman","Day And Night",
 				"Day and night, night and day, \n"+
 				"I will meditate on Your Word. \n"+
 				"Day and night, night and day, \n"+
@@ -1036,7 +1036,7 @@ angular.module('SongHandler', [])
 				"Day and night, night and day, \n"+
 				"I will meditate on Your Word.  \n"];
 
-			songs[24] = ["Avion Blackman - It Is For Freedom",
+			songs[24] = ["Avion Blackman","It Is For Freedom",
 				"It's for freedom, you've been set free, \n"+
 				"It's for freedom, it's for freedom. \n"+
 				"Don't you go back to your slavery, \n"+
@@ -1105,7 +1105,7 @@ angular.module('SongHandler', [])
 				"So don't go back to the way things used to be. \n"+
 				"Don't go back to the way things used to be. \n"];
 
-			songs[25] = ["PApa San - God and I",
+			songs[25] = ["Papa San","God and I",
 				"Jesus make me smile again Jesus make me scream again \n"+
 				"Jesus make me laugh again teach mi how fi walk again (yeeeh) rept \n"+
 				"(Mi go so now) \n"+
