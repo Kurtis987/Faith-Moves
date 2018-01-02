@@ -1,4 +1,4 @@
-angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'NavbarDirective'])
+angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'SongHandler', 'NavbarDirective'])
 	.run(function($rootScope) {
 		$rootScope.verses = [];
 		$rootScope.verses[0] = ["John 16:33", "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."];
@@ -49,6 +49,8 @@ angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'N
 		var daysSinceEpoch = Math.floor(today/dayInMilliseconds);
 		var pick = daysSinceEpoch % $rootScope.verses.length;
 		$rootScope.VerseOfDay = $rootScope.verses[pick];
+
+
 	});
 
 angular.module('FaithMovesApp').config(function($locationProvider, $routeProvider) {
@@ -71,8 +73,8 @@ angular.module('FaithMovesApp').config(function($locationProvider, $routeProvide
 		controller: 'LyricsController'
 	})
 	.when('/music', {
-		templateUrl: 'templates/music.html',
-		controller: 'MusicController'
+		templateUrl: 'templates/home.html',
+		controller: 'HomeController'
 	})  
 	.when('/prayer', {
 		templateUrl: 'templates/prayer.html',
