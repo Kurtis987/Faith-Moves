@@ -1,4 +1,4 @@
-angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'SongHandler', 'NavbarDirective'])
+angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'SongHandler', 'NavbarDirective','RadioDirective'])
 	.run(function($rootScope) {
 		$rootScope.verses = [];
 		$rootScope.verses[0] = ["John 16:33", "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world."];
