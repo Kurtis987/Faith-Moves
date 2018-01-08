@@ -6,6 +6,27 @@ angular.module('RouteControllers', [])
 	.controller('NavController', function($scope) {
 
 	})
+	.controller('RadioController', function($scope) {
+		selectStyle();
+		$scope.value = .5;
+		$scope.player = document.getElementById("player");
+		$scope.player.volume = $scope.value;
+		$scope.$watch(function(){return $scope.value;},
+              function (newValue, oldValue) {
+                 $scope.player.volume = newValue;
+        });
+		$scope.play = function() {
+			if ($scope.player.paused) {
+				$scope.player.play();
+				//pButton.className = "";
+				//pButton.className = "pause";
+			} else {
+				$scope.player.pause();
+				//pButton.className = "";
+				//pButton.className = "play";
+			}
+		};
+	})
 	.controller('AboutController', function($scope, $location) {
 
 	})

@@ -50,7 +50,6 @@ angular.module('FaithMovesApp', ['ngRoute', 'ngSanitize', 'RouteControllers', 'S
 		var pick = daysSinceEpoch % $rootScope.verses.length;
 		$rootScope.VerseOfDay = $rootScope.verses[pick];
 
-
 	});
 
 angular.module('FaithMovesApp').config(function($locationProvider, $routeProvider) {

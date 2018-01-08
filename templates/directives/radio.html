@@ -1,7 +1,30 @@
-<div class="container-fluid">
+<div class="container-fluid radio-bar">
 	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">	
-			<iframe src="https://broadcaster.live365.com/v1/now-playing/large/a53672" width='440px' height='240px' frameborder="0"/>
+		<div id="live365-now-playing-widget">
+			<div id="black-mask_live365"></div>
+			<img id="bg-img_live365" src="">
+			<div id="main-content_live365">
+				<a target="_blank" href="http://player.live365.com/a53672">
+					<img id="album-art_live365" src="/img/FaithMovesMountains.png">
+				</a>
+				<div id="song-content_live365">
+					<div id="now-playing-text_live365">NOW PLAYING</div>
+					<div id="song-title_live365">Faith Moves</div>
+					<div id="song-artist_live365">Radio</div>
+					<a target="_blank" href="http://player.live365.com/a53672" class="btn_live365" id="listen-btn_live365">LISTEN NOW</a>
+				</div>
+				<a target="_blank" href="https://live365.com/"><img id="logo_live365" src="https://live365.com/assets/logo_now_playing.png"></a>
+			</div>
+		</div>
+		<audio id="player">
+			<source src="http://streaming.live365.com/a53672" type="audio/mpeg">
+			<source src="http://streaming.live365.com/a53672" type="audio/mp4">
+			<source src="http://streaming.live365.com/a53672" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		<div class="player">
+			<button type="button" class="btn btn-primary btn-sm" ng-click="play()"><span class="glyphicon glyphicon-play"></span> Play</button><br>
+			<input type="range" id="volume" title="volume" min="0" max="1" step=".1" value=".5" ng-model="value">
 		</div>
 	</div>
 </div>

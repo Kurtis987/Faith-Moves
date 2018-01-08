@@ -1,3 +1,6 @@
+a#listen-btn_live365 {
+	display: none;
+}
 .artist {
 	margin: 20px;
 }
@@ -7,13 +10,16 @@
 	width: 100%;
 	max-width: 650px;
 }
-
 body {
 	min-height: 100%;
 	padding-bottom: 69px;
 	position: relative;
 }
 
+.caption-black {
+	background-color: #000000;
+    display: inline-block;
+}
 .caret {
 	position: absolute;
 	right: 33px; 
@@ -22,6 +28,95 @@ body {
 .container-fluid.artist-container {
 	padding: 0 15px;
 	max-width: 1150px;
+}
+
+.container-fluid.radio-bar {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -65px;
+}
+
+div#black-mask_live365 {
+    display: none;
+}
+
+div#live365-now-playing-widget {
+    min-height: 65px;
+    height: auto;
+    max-width: 100%;
+    background-color: #10354e; 
+    width: 100%;
+}
+
+div#main-content_live365 {
+    z-index: 1001;
+    position: relative;
+    padding: 7.5px 0 0 45px;
+	top: auto;
+}
+
+.dropdown-menu {
+	background-color: #f0f8ff;
+}
+.dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: #337ab7;
+}
+
+img#album-art_live365 {
+	float: left;
+    height: 50px; 
+    left: auto;
+    margin-bottom: 5px;
+    margin-right: 5px; 
+    position: relative;
+    top: auto;
+    width: 50px; 
+}
+
+img#bg-img_live365 {
+	display: none;
+}
+
+img#logo_live365 { 
+    position: relative;
+    top: auto;
+    left: auto; 
+    margin-bottom: 7.5px;
+    padding-right: 32px;
+    float: right;
+}
+
+.img-logo_live365-Left {
+	float: left !important;
+}
+
+div#now-playing-text_live365 { 
+    font-size: 12px;
+    line-height: 12px; 
+    padding-top: 0;
+}
+
+div#song-artist_live365 {   
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 3px;
+    padding-bottom: 0;
+}
+div#song-content_live365 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 240px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 65px;
+}
+
+div#song-title_live365 { 
+    font-size: 14px;
+    line-height: 16px; 
+    padding-top: 3px; 
 }
 
 #email {
@@ -60,6 +155,7 @@ form {
 .form-group {
 	text-align: center;
 }
+
 #form-submit {
  text-align: center;
 }
@@ -102,6 +198,9 @@ nav {
 	background: aliceblue;
 }
 
+.navbar {
+	margin-bottom: 0;
+}
 .navbar-brand { 
     height: 71px; 
     line-height: 41px;
@@ -123,11 +222,27 @@ nav {
 .panel-body {
 	white-space: pre-line;
 }
+.player {
+	position: relative;
+    left: 340px;
+    top: -57.5px;
+    z-index: 10000;
+    width: 60px;
+}
+
+.player-small-screen {
+	top: -78px;
+}
+
+.player-avoid-menu {
+	left: 575px;
+}
 
 #prayer-request {
 	margin-bottom: 30px;	
 	text-align: center;
 }
+
 .red-letter {
 	color: red;
 }
@@ -154,6 +269,12 @@ ul.nav > li {
 	border-bottom: 1px solid lightblue;
 }
 
+#volume {
+	width: 60px;
+	padding: 0;
+	margin-top: -6px;
+}
+
 @media (min-width: 768px){
 	.artist-img {
 		max-height: 475px;
@@ -174,11 +295,18 @@ ul.nav > li {
 	.container-fluid {
     	padding: 0 15px;
 	}
+	div#main-content_live365 { 
+    	padding-left: 58px;
+	}
 	footer {
 		padding: 15px 40px;
 	}
+	img#logo_live365 { 
+		float: right;
+	    padding-right: 70px;
+	}
 	.nav > li > a {
-		padding: 25.5px 15px;
+		padding: 26px 15px;
 	}
 	.navbar-brand {
 		margin: 0;
@@ -204,11 +332,21 @@ ul.nav > li {
 	.container-fluid { 
     	padding: 0 80px;
 	}
+	div#main-content_live365 { 
+    	padding-left: 100px;
+	}
 	footer {
 		padding: 15px 80px;
+	}
+	img#logo_live365 { 
+		float: right;
+	    padding-right: 135px;
 	}
 	.navbar-brand {
 		padding-left: 15px;
 		margin: 0; 
-	}  
+	} 
+	.player {
+	    left: 395px;
+	} 
 }
