@@ -236,7 +236,7 @@ nav {
 }
 
 .player-avoid-menu {
-	left: 575px;
+	left: 560px;
 }
 
 #prayer-request {
@@ -308,7 +308,7 @@ ul.nav > li {
 	}
 	img#logo_live365 { 
 		float: right;
-	    padding-right: 70px;
+	    padding-right: 55px;
 	}
 	.nav > li > a {
 		padding: 26px 15px;
@@ -345,7 +345,7 @@ ul.nav > li {
 	}
 	img#logo_live365 { 
 		float: right;
-	    padding-right: 135px;
+	    padding-right: 120px;
 	}
 	.navbar-brand {
 		padding-left: 15px;
