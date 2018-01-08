@@ -101,7 +101,7 @@ angular.module('RouteControllers', [])
 
 	})
 	.controller('LyricsController', function($scope, $location, SongFactory) {
-		$scope.lyrics = SongFactory.getSongs();
+		$scope.lyrics = SongFactory.getLyrics();
 		//scroll to top of active panel
 		//https://stackoverflow.com/questions/21958933/bootstrap-accordion-scroll-to-top-of-active-panel-heading
 		//Credit to Xelio for this fix

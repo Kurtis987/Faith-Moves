@@ -383,7 +383,7 @@
 		'Said "if I could just touch the hem of your garment \n'+
 		'I know I\'ll be made whole right now" \n'];
 
-	songs[9] = ["Sam Cooke and the Soul Stirrers","the last mile of the way",
+	songs[9] = ["Sam Cooke and the Soul Stirrers","The Last Mile of the Way (Take 2A)",
 		"If I walk in the pathway of duty \n"+
 		"If I work 'til the close of the day,  \n"+
 		"Lord \n"+
@@ -1200,6 +1200,24 @@
 		"The cross still bleed, the cross still bleed (yes) \n"+
 		" \n"];
 
+		songs[26] = ["The O.C. Supertones","Lift Me Up",""];
+		songs[27] = ["Mikey D & Gospel David","God's Way",""];
+		songs[28] = ["The Five Blind Boys of Alabama","Look Where He Brought Me from",""];
+		songs[29] = ["Ryan Hiraoka","Freedom",""];
+		songs[30] = ["Owen Uriah","We're Not Ordinary People",""];
+		songs[31] = ["Owen Uriah","My Redeemer Lives",""];
+		songs[32] = ["Owen Uriah","Because Of Him",""];
+		songs[33] = ["Elan Atias","Nothing Is Worth Losing You",""];
+		songs[34] = ["Lincoln Brewster","Here I Am to Worship (Live Instrumental Version)",""];
+		songs[35] = ["Corey Harris","Daily Bread",""];
+		songs[36] = ["Carlene Davis","Healing Rain",""];
+		songs[37] = ["Donna Marie","God so Love the World",""];
+		songs[38] = ["Donna Marie","Bless His Holy Name",""];
+		songs[39] = ["Junior Tucker & Carlene Davis","Lord I Lift Your Name on High",""];
+		songs[40] = ["E-Mac-U-Let","Jesus Be a Fence",""];
+		songs[41] = ["Carlene Davis","Give Thanks",""];
+		songs[42] = ["DJ Nicholas","Thank You",""];
+
 
 		//private function
 		function sortSongs(){
@@ -1230,6 +1248,16 @@
 			},
 			getArtists: function() {
 			    return sortArtists();
-			}  
+			},
+			getLyrics: function() {
+				var localSongs = sortSongs();
+				var i = 0;
+				var songsWithLyrics = [];
+				for(i; i < localSongs.length; i++) {
+					if(localSongs[i][2] != ""){
+						songsWithLyrics[i] = localSongs[i];
+					}
+				}
+			}
 		};
 	});
