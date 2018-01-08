@@ -53,7 +53,7 @@ div#live365-now-playing-widget {
 div#main-content_live365 {
     z-index: 1001;
     position: relative;
-    padding: 7.5px 0 0 45px;
+    padding: 7.5px 0 0 30px;
 	top: auto;
 }
 
@@ -301,7 +301,7 @@ ul.nav > li {
     	padding: 0 15px;
 	}
 	div#main-content_live365 { 
-    	padding-left: 58px;
+    	padding-left: 43px;
 	}
 	footer {
 		padding: 15px 40px;
@@ -338,7 +338,7 @@ ul.nav > li {
     	padding: 0 80px;
 	}
 	div#main-content_live365 { 
-    	padding-left: 100px;
+    	padding-left: 85px;
 	}
 	footer {
 		padding: 15px 80px;
