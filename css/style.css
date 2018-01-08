@@ -42,10 +42,11 @@ div#black-mask_live365 {
 }
 
 div#live365-now-playing-widget {
+    background-color: #10354e; 
+    border-radius: 0;
     min-height: 65px;
     height: auto;
     max-width: 100%;
-    background-color: #10354e; 
     width: 100%;
 }
 
@@ -54,41 +55,6 @@ div#main-content_live365 {
     position: relative;
     padding: 7.5px 0 0 45px;
 	top: auto;
-}
-
-.dropdown-menu {
-	background-color: #f0f8ff;
-}
-.dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-	color: #337ab7;
-}
-
-img#album-art_live365 {
-	float: left;
-    height: 50px; 
-    left: auto;
-    margin-bottom: 5px;
-    margin-right: 5px; 
-    position: relative;
-    top: auto;
-    width: 50px; 
-}
-
-img#bg-img_live365 {
-	display: none;
-}
-
-img#logo_live365 { 
-    position: relative;
-    top: auto;
-    left: auto; 
-    margin-bottom: 7.5px;
-    padding-right: 32px;
-    float: right;
-}
-
-.img-logo_live365-Left {
-	float: left !important;
 }
 
 div#now-playing-text_live365 { 
@@ -117,6 +83,13 @@ div#song-title_live365 {
     font-size: 14px;
     line-height: 16px; 
     padding-top: 3px; 
+}
+
+.dropdown-menu {
+	background-color: #f0f8ff;
+}
+.dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: #337ab7;
 }
 
 #email {
@@ -166,6 +139,34 @@ html {
 
 .icon-bar {
 	background-color: #337ab7;
+}
+
+img#album-art_live365 {
+	float: left;
+    height: 50px; 
+    left: auto;
+    margin-bottom: 5px;
+    margin-right: 5px; 
+    position: relative;
+    top: auto;
+    width: 50px; 
+}
+
+img#bg-img_live365 {
+	display: none;
+}
+
+img#logo_live365 { 
+    position: relative;
+    top: auto;
+    left: auto; 
+    margin-bottom: 7.5px;
+    padding-right: 32px;
+    float: right;
+}
+
+.img-logo_live365-Left {
+	float: left !important;
 }
 
 input {
@@ -245,6 +246,10 @@ nav {
 
 .red-letter {
 	color: red;
+}
+
+.row.radio-bar {
+	margin: 0px;
 }
 
 .square {
