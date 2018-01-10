@@ -18,8 +18,11 @@ function selectStyle() {
     //responsive width fix credit to forsvunnet on https://github.com/eddiemachado-zz/bones/issues/468
     var responsive_width = window.innerWidth || $(window).width();
 
-    if(responsive_width < 526)
+    if(responsive_width < 538)
     {
+	console.log("innerWidth: "+ window.innerWidth);
+	console.log("window: "+$(window).width());
+	console.log("responsive: " +responsive_width);
         $('#logo_live365').addClass('img-logo_live365-Left');
         $('.player').addClass('player-small-screen');
     }
