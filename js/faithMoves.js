@@ -40,7 +40,8 @@ function selectStyle() {
     	$("span.glyphicon-plus").removeClass("glyphicon").removeClass("glyphicon-plus").addClass("caret");
     	
     }
-    if(responsive_width <= 791 && responsive_width > 767)
+    //have to use a combination of width commands to achieve affect here
+    if($(window).width() <= 791 && responsive_width > 767)
     {
         $('.player').addClass('player-avoid-menu');
     }
