@@ -15,10 +15,10 @@ $(document).ready(function() {
 
 
 function selectStyle() { 
-    //responsive width fix credit to forsvunnet on https://github.com/eddiemachado-zz/bones/issues/468
-    var responsive_width = window.innerWidth || $(window).width();
-
-    if(responsive_width < 538)
+    //bootstrap seems to size accourding to innerWidth it is also the width Chrome reports
+    var responsive_width = window.innerWidth;
+    //$(window)width() is the width used for my custom breakpoint and is the actual width
+    if($(window).width() < 521)
     {
 	console.log("innerWidth: "+ window.innerWidth);
 	console.log("window: "+$(window).width());
