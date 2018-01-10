@@ -17,7 +17,8 @@ $(document).ready(function() {
 function selectStyle() { 
     //bootstrap seems to size accourding to innerWidth it is also the width Chrome reports
     var responsive_width = window.innerWidth;
-    //$(window)width() is the width used for my custom breakpoint and is the actual width
+    //$(window).width() is the width used for my custom breakpoint and is the actual width
+    console.log($(window).width());
     if($(window).width() < 521)
     {
         $('#logo_live365').addClass('img-logo_live365-Left');
@@ -38,7 +39,7 @@ function selectStyle() {
     	
     }
     //have to use a combination of width commands to achieve affect here
-    if($(window).width() <= 808 && responsive_width > 767)
+    if($(window).width() <= 806 && responsive_width > 767)
     {
         $('.player').addClass('player-avoid-menu');
     }
