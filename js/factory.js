@@ -9,9 +9,8 @@
 	         sorted[sortedLength] = newElement;
 	         return sorted;
 	     }
-	     //out of sort so swap elements we compared
-	     sorted[sortedLength] = sorted[sortedLength-1];
-	 
+	    //out of sort so swap elements we compared
+	    sorted[sortedLength] = sorted[sortedLength-1];
 	    sorted[sortedLength-1] = newElement;
 	 
 	    sortedLength-=1;
@@ -24,10 +23,11 @@
 	     }
 	}
 
-
+ 
 
 	var songs = [];
-	songs[0] = ["Dominic Balli","Warrior","My heart is overflowing with a good theme \n" +
+	songs[0] = ["Dominic Balli","Warrior","Public Announcement (Bonus Version)",
+		"My heart is overflowing with a good theme \n" +
 		"I recite my composition concerning the King \n" +
 		"My tongue is like the pen of a ready writer (Selah) \n" +
 		"My God when you came out before your people \n" +
@@ -63,9 +63,10 @@
 		"Enemy can't stay gotta vacate when the great name been proclaimed thus say the Lord \n" +
 		"And I'm gonna fight it with a mighty mighty vigor gonna side it with the undivided \n" +
 		"Hot up in the battle in valley of the \n" +
-		"Shadow of a gallow and I'm runnin with a fella that I'm honored just to follow"];
+		"Shadow of a gallow and I'm runnin with a fella that I'm honored just to follow","PublicAnnouncementBonusVersion.jpg"];
 
-	songs[1] = ["Dominic Balli","Drink for Free",'"Drink for Free" Lyrics \n' +
+	songs[1] = ["Dominic Balli","Drink for Free","Public Announcement (Bonus Version)",
+		'"Drink for Free" Lyrics \n' +
 		"by Dominic Balli | from the album Public Announcement \n" +
 		"Can you tell me wise man, what my life's about \n" +
 		"Cuz I read somewhere, that he made me for his pleasure \n" + 
@@ -86,9 +87,9 @@
 		"Come come unto the waters and drink \n" + 
 		"Come come unto the waters waters \n" + 
 		"Come come unto the waters \n" + 
-		'and drink yourself to life'];
+		'and drink yourself to life',"PublicAnnouncementBonusVersion.jpg"];
 
-	songs[2] = ["Dominic Balli","Arise",'"Arise" Lyrics \n'+	
+	songs[2] = ["Dominic Balli","Arise","Public Announcement (Bonus Version)",'"Arise" Lyrics \n'+	
 		"by Dominic Balli | from the album Public Announcement \n" +
 		"  \n" +
 		" \n" +
@@ -129,10 +130,11 @@
 		"Move on seize the day \n" +
 		"Rise up from the grave \n" +
 		"Move on seize the day \n" +
-		"We must arise"
+		"We must arise","PublicAnnouncementBonusVersion.jpg"
 		];
 
-	songs[3] = ["Dominic Balli","Bread for the Broken",'"Bread for the Broken (feat. Speech of Arrested Development)" Lyrics \n'+
+	songs[3] = ["Dominic Balli","Bread for the Broken","Public Announcement (Bonus Version)",
+		'"Bread for the Broken (feat. Speech of Arrested Development)" Lyrics \n'+
 		"by Dominic Balli | from the album Public Announcement \n" +
 		"  \n" +
 		" \n" +
@@ -167,9 +169,10 @@
 		"And let me paint a picture of freedom \n" +
 		"Let me paint the picture of healing \n" +
 		"Let me paint the picture of humans through our lovin and given \n" +
-		"We need bread"];
+		"We need bread","PublicAnnouncementBonusVersion.jpg"];
 
-	songs[4] = ["Morgan Heritage","Take up your cross","I've seen the Son of Man, you know he's going there \n"+
+	songs[4] = ["Morgan Heritage","Take up your cross","Take Up The Cross",
+		"I've seen the Son of Man, you know he's going there \n"+
 		"\n"+
 		"With a voice much louder than the rolling thunder \n"+
 		"And his presence causing the earth to tremble, yeah \n"+
@@ -220,9 +223,9 @@
 		" \n"+
 		" \n"+
 		"Songwriters: Dean Ivanhoe Fraser / Denroy Morgan / Memmalatel Morgan / Nakhamyah Morgan / Peter Anthony Morgan / V Morgan \n"+
-		"Take Up Your Cross lyrics © BMG Rights Management US, LLC"];
+		"Take Up Your Cross lyrics © BMG Rights Management US, LLC","TakeUpTheCross.jpg"];
 		
-	songs[5] = ["Bunny Rugs","Praise Him","Written by: Bunny Rugs and Dan Geary \n"+
+	songs[5] = ["Bunny Rugs","Praise Him","I'm Sure","Written by: Bunny Rugs and Dan Geary \n"+
 		"c-2006 COF Music, Inc. \n"+
 		"Publishing: Raw Edge Planet (ASCAP) \n"+
 		" \n"+
@@ -281,9 +284,10 @@
 		"Praise him, praise him \n"+
 		"Give thanks and praise to the King \n"+
 		"Praise him, praise him \n"+
-		"He gave me a song to sing"];
+		"He gave me a song to sing","ImSure.jpg"];
 
-	songs[6] = ["George Nooks","God is Standing By","Lyrics for God Is Standing By by George Nooks \n"+
+	songs[6] = ["George Nooks","God is Standing By","Giving Thanks",
+		"Lyrics for God Is Standing By by George Nooks \n"+
 		" \n"+
 		"when you have troubles \n"+
 		"don't cry nooooooo \n"+
@@ -317,9 +321,10 @@
 		"no need to cry ohhhh \n"+
 		"God is standing by thank you Lord \n"+
 		"sooooo don't you worry and don't cry \n"+
-		"don't cry ×12 \n"];
+		"don't cry ×12 \n","GivingThanks.jpg"];
 
-	songs[7] = ["Tashai Houston","Sheltered in the arms of God","I feel the touch of hands so warm and tender \n"+
+	songs[7] = ["Tashai Houston","Sheltered in the arms of God","Sheltered in the Arms of God",
+		"I feel the touch of hands so warm and tender \n"+
 		"They're leading me in the path that I must trod \n"+
 		"I have no fear for Jesus walks beside me \n"+
 		"And I'm sheltered in the arms of God \n"+
@@ -347,9 +352,9 @@
 		"For I am sheltered safe within the arms of God \n"+
 		"He walks with me  \n"+
 		"And naught of earth can harm me  \n"+
-		"For I am sheltered within the arms of God \n"];
+		"For I am sheltered within the arms of God \n","ShelteredintheArmsofGodSingle.jpg"];
 
-	songs[8] = ["Sam Cooke and the Soul Stirrers","Touch the hem of his garment",
+	songs[8] = ["Sam Cooke and the Soul Stirrers","Touch the hem of his garment","The 2 Sides of Sam Cooke",
 		"Whoa, there was a woman in the Bible days \n"+
 		"She had been sick, \n"+
 		"Sick so very long \n"+
@@ -381,9 +386,9 @@
 		'"Oh Lord" (Oh Lord) \n'+
 		'And "Oh Lord" (Oh Lord) \n'+
 		'Said "if I could just touch the hem of your garment \n'+
-		'I know I\'ll be made whole right now" \n'];
+		'I know I\'ll be made whole right now" \n',"The2SidesofSamCooke.jpg"];
 
-	songs[9] = ["Sam Cooke and the Soul Stirrers","The Last Mile of the Way (Take 2A)",
+	songs[9] = ["Sam Cooke and the Soul Stirrers","The Last Mile of the Way (Take 2A)","The 2 Sides of Sam Cooke",
 		"If I walk in the pathway of duty \n"+
 		"If I work 'til the close of the day,  \n"+
 		"Lord \n"+
@@ -404,9 +409,9 @@
 		"When I've gone the last mile of the way, oh yes \n"+
 		"I shall rest at the close of day, oh yeah \n"+
 		"For I know, there are joy awaiting \n"+
-		"When I've gone the last mile of the way \n"];
+		"When I've gone the last mile of the way \n","The2SidesofSamCooke.jpg"];
 
-	songs[10] = ["Sam Cooke and the Soul Stirrers","That's heaven to me",
+	songs[10] = ["Sam Cooke and the Soul Stirrers","That's heaven to me","Sam Cooke With the Soul Stirrers",
 		"The things that I see \n"+
 		"As I walk along the streets \n"+
 		"That's heaven to me \n"+
@@ -436,9 +441,9 @@
 		"(That's heaven to me) \n"+
 		"That's heaven to me, woah, woah \n"+
 		" \n"+
-		"Woah woah, woah woah, woah Lord \n"];
+		"Woah woah, woah woah, woah Lord \n","SamCookeWiththeSoulStirrers.jpg"];
 
-	songs[11] = ["Sam Cooke and the Soul Stirrers","Pilgrim of Sorrow",
+	songs[11] = ["Sam Cooke and the Soul Stirrers","Pilgrim of Sorrow","The 2 Sides of Sam Cooke",
 		"Lord, I'm poor pilgrim of sorrow \n"+
 		"Down in this world, I'm all alone \n"+
 		"I have no hope for tomorrow \n"+
@@ -458,9 +463,9 @@
 		"And oh, Lord, sometimes I'm exhausted, Lord and driven \n"+
 		"'Til I decided that I would roam \n"+
 		"That's when I heard of a city called Glory \n"+
-		"And oh, I'm trying to make that city my home \n"];
+		"And oh, I'm trying to make that city my home \n","The2SidesofSamCooke.jpg"];
 
-	songs[12] = ["Sam Cooke and the Soul Stirrers","He's so wonderful",
+	songs[12] = ["Sam Cooke and the Soul Stirrers","He's so wonderful","Sam Cooke With the Soul Stirrers",
 		"Wonderful, God is so wonderful \n"+
 		"he's wonderful, God he's wonderful \n"+
 		" \n"+
@@ -482,9 +487,9 @@
 		"He's been my mother and my father too \n"+
 		"There's no limit to what my Lord can do \n"+
 		" \n"+
-		"and O, I love God, he's so wonderful \n"];
+		"and O, I love God, he's so wonderful \n","SamCookeWiththeSoulStirrers.jpg"];
 
-	songs[13] = ["The Blind Boys of Alabama","Wade in the Water",
+	songs[13] = ["The Blind Boys of Alabama","Wade In the Water (Live on Morning Becomes Eclectic)","Higher Ground",
 		"Wade in the water \n"+ 
 		"Come on and \n"+
 		"Wade in the water children \n"+
@@ -545,9 +550,9 @@
 		" \n"+
 		" \n"+
 		"Songwriters: Chris Goldsmith / John Chelew / The Blind Boys Of Alabama \n"+
-		"Wade in the Water lyrics © BMG Rights Management US, LLC \n"];
+		"Wade in the Water lyrics © BMG Rights Management US, LLC \n","HigherGround.jpg"];
 
-	songs[14] = ["The Blind Boys of Alabama","People Get Ready",
+	songs[14] = ["The Blind Boys of Alabama","People Get Ready","Live at 2010 New Orleans Jazz & Heritage Festival",
 		"People get ready \n"+
 		"There's a train a-coming \n"+
 		"You don't need no baggage \n"+
@@ -586,9 +591,9 @@
 		" \n"+
 		" \n"+
 		"Songwriters: Curtis Mayfield \n"+
-		"People Get Ready lyrics © Sony/ATV Music Publishing LLC, Warner/Chappell Music, Inc \n"];
+		"People Get Ready lyrics © Sony/ATV Music Publishing LLC, Warner/Chappell Music, Inc \n","Liveat2010NewOrleansJazz&HeritageFestival.jpg"];
 
-	songs[15] = ["The Blind Boys of Alabama","Amazing Grace",
+	songs[15] = ["The Blind Boys of Alabama","Amazing Grace","Down In New Orleans",
 		"Amazing grace, how sweet the sound \n"+
 		"That sav'd a wretch like me! \n"+
 		"I once was lost, but now am found, \n"+
@@ -621,9 +626,9 @@
 		"But God, who call'd me here below, \n"+
 		"Will be forever mine. \n"+
 		" \n"+
-		"John Newton, Olney Hymns (London: W. Oliver, 1779) \n"];
+		"John Newton, Olney Hymns (London: W. Oliver, 1779) \n","DownInNewOrleans.jpg"];
 
-	songs[16] = ["Away From You","The O.C. Supertones",
+	songs[16] = ["Away From You","The O.C. Supertones","Unite",
 		"Say you got a minute friend \n"+
 		"Because I'd like to tell you something \n"+
 		"You may think nothing of it \n"+
@@ -658,9 +663,9 @@
 		"When I'm trying so hard to obey \n"+
 		" \n"+
 		"Songwriters: Alan Tatum / Bobby West / Lawrence Johnson \n"+
-		"Away From You lyrics © Sony/ATV Music Publishing LLC \n"];
+		"Away From You lyrics © Sony/ATV Music Publishing LLC \n","Unite.jpg"];
 
-	songs[17] = ["George nooks","How Great Thou Art",
+	songs[17] = ["George nooks","How Great Thou Art","Reggae Sunday Service, Vol. 3",
 		"O Lord my God, when I in awesome wonder \n"+
 		"Consider all the worlds Thy hands have made; \n"+
 		"I see the stars, I hear the rolling thunder \n"+
@@ -698,9 +703,9 @@
 		"When Christ shall come, with shout of acclamation \n"+
 		"And take me home, what joy shall fill my heart \n"+
 		"Then I shall bow, in humble adoration \n"+
-		'And then proclaim: "My God, how great Thou art!" \n'];
+		'And then proclaim: "My God, how great Thou art!" \n',"ReggaeSundayServiceVol3.jpg"];
 
-	songs[18] = ["George Nooks","Give Thanks",
+	songs[18] = ["George Nooks","Give Thanks","Giving Thanks",
 		"Give thanks \n"+
 		"With a grateful heart \n"+
 		"Give thanks \n"+
@@ -720,9 +725,9 @@
 		"Let the poor say \n"+
 		'"I am rich" \n'+
 		"Because of what the Lord \n"+
-		"Has done for us \n"];
+		"Has done for us \n","GivingThanks.jpg"];
 
-	songs[19] = ["Wayne Stoddart","highest praise",
+	songs[19] = ["Wayne Stoddart","highest praise","Love Convictions",
 		'"Enter into his gates with thanksgiving and into his courts with praise!" \n'+
 		"CHORUS \n"+
 		"Let me hear you praise Him, \n"+
@@ -760,9 +765,9 @@
 		"Give Jesus Christ the highest praise (x3) \n"+
 		"Let me hear you praise Him (x3) \n"+
 		"Bow down before Him worship and adore Him  \n"+
-		"Give Jesus Christ the highest praise \n"];
+		"Give Jesus Christ the highest praise \n","LoveConvictions.jpg"];
 
-	songs[20] = ["DJ Nicholas feat. Kevin Smith & Jermaine Edwards","Close To You",
+	songs[20] = ["DJ Nicholas feat. Kevin Smith & Jermaine Edwards","Close To You","School of Volume",
 		"Bless Your name Jesus \n"+
 		"Yooo \n"+
 		" \n"+
@@ -884,9 +889,9 @@
 		"Close to di Lord like a post to the guard \n"+
 		"Close to di Lord like a house to the yard \n"+
 		"Wire mouse to the cord \n"+
-		"A mi source a di Lord \n"];
+		"A mi source a di Lord \n","SchoolofVolume.jpg"];
 
-	songs[21] = ["Avion Blackman","Got To Be",
+	songs[21] = ["Avion Blackman","Got To Be","Sweet Life",
 		"The Spirit of the Lord I've got to be, \n"+
 		"Got to be, got to be. \n"+
 		"Walking in the presence of the Almighty, \n"+
@@ -948,9 +953,9 @@
 		"The Spirit of the Lord I've got to be, \n"+
 		"Got to be, got to be. \n"+
 		"Walking in the presence of the Almighty, \n"+
-		"Almighty, Almighty. \n"];
+		"Almighty, Almighty. \n","SweetLife.jpg"];
 
-	songs[22] = ["Avion Blackman","Joy Of The Lord",
+	songs[22] = ["Avion Blackman","Joy Of The Lord","Third World Girl",
 		"I can't explain \n"+
 		"The way You heal my heart \n"+
 		"When I'm in pain \n"+
@@ -1010,9 +1015,9 @@
 		"The joy of the Lord \n"+
 		"Is my strength - is my strength \n"+
 		"The joy of the Lord \n"+
-		"Is my song - is my song \n"];
+		"Is my song - is my song \n","ThirdWorldGirl.jpg"];
 
-	songs[23] = ["Avion Blackman","Day And Night",
+	songs[23] = ["Avion Blackman","Day And Night","Sweet Life",
 		"Day and night, night and day, \n"+
 		"I will meditate on Your Word. \n"+
 		"Day and night, night and day, \n"+
@@ -1060,9 +1065,9 @@
 		"Day and night, night and day, \n"+
 		"I will meditate on Your Word. \n"+
 		"Day and night, night and day, \n"+
-		"I will meditate on Your Word.  \n"];
+		"I will meditate on Your Word.  \n","SweetLife.jpg"];
 
-	songs[24] = ["Avion Blackman","It Is For Freedom",
+	songs[24] = ["Avion Blackman","It Is For Freedom","Sweet Life",
 		"It's for freedom, you've been set free, \n"+
 		"It's for freedom, it's for freedom. \n"+
 		"Don't you go back to your slavery, \n"+
@@ -1129,9 +1134,9 @@
 		"It's for freedom, it is for freedom. \n"+
 		" \n"+
 		"So don't go back to the way things used to be. \n"+
-		"Don't go back to the way things used to be. \n"];
+		"Don't go back to the way things used to be. \n","SweetLife.jpg"];
 
-	songs[25] = ["Papa San","God and I",
+	songs[25] = ["Papa San","God and I","God & I",
 		"Jesus make me smile again Jesus make me scream again \n"+
 		"Jesus make me laugh again teach mi how fi walk again (yeeeh) rept \n"+
 		"(Mi go so now) \n"+
@@ -1198,25 +1203,25 @@
 		"Like Jacki Valesquez I get on my knees I realize my problem is just bun and cheese \n"+
 		"He's here with me and He will never leave \n"+
 		"The cross still bleed, the cross still bleed (yes) \n"+
-		" \n"];
+		" \n","GodandI.jpg"];
 
-		songs[26] = ["The O.C. Supertones","Lift Me Up",""];
-		songs[27] = ["Mikey D & Gospel David","God's Way",""];
-		songs[28] = ["The Five Blind Boys of Alabama","Look Where He Brought Me from",""];
-		songs[29] = ["Ryan Hiraoka","Freedom",""];
-		songs[30] = ["Owen Uriah","We're Not Ordinary People",""];
-		songs[31] = ["Owen Uriah","My Redeemer Lives",""];
-		songs[32] = ["Owen Uriah","Because Of Him",""];
-		songs[33] = ["Elan Atias","Nothing Is Worth Losing You",""];
-		songs[34] = ["Lincoln Brewster","Here I Am to Worship (Live Instrumental Version)",""];
-		songs[35] = ["Corey Harris","Daily Bread",""];
-		songs[36] = ["Carlene Davis","Healing Rain",""];
-		songs[37] = ["Donna Marie","God so Love the World",""];
-		songs[38] = ["Donna Marie","Bless His Holy Name",""];
-		songs[39] = ["Junior Tucker & Carlene Davis","Lord I Lift Your Name on High",""];
-		songs[40] = ["E-Mac-U-Let","Jesus Be a Fence",""];
-		songs[41] = ["Carlene Davis","Give Thanks",""];
-		songs[42] = ["DJ Nicholas","Thank You",""];
+		songs[26] = ["The O.C. Supertones","Lift Me Up","Loud and Clear","","LoudandClear.jpg"];
+		songs[27] = ["Mikey D & Gospel David","God's Way","God's Way - Single","","GodsWay-Single.jpg"];
+		songs[28] = ["The Five Blind Boys of Alabama","Look Where He Brought Me from","Faith Moves Mountains","","FaithMovesMountains.jpg"];
+		songs[29] = ["Ryan Hiraoka","Freedom","Hana Hou","","HanaHou.jpg"];
+		songs[30] = ["Owen Uriah","We're Not Ordinary People","The Same Yesterday, Today and Forever","","TheSameYesterdayTodayandForever.jpg"];
+		songs[31] = ["Owen Uriah","My Redeemer Lives","Heart of Uriah","","HeartofUriah.jpg"];
+		songs[32] = ["Owen Uriah","Because Of Him","Heart of Uriah","","HeartofUriah.jpg"];
+		songs[33] = ["Elan Atias","Nothing Is Worth Losing You","Together As One","","TogetherAsOne.jpg"];
+		songs[34] = ["Lincoln Brewster","Here I Am to Worship (Live Instrumental Version)","Let the Praises Ring: The Best Of","","LetthePraisesRingTheBestOf.jpg"];
+		songs[35] = ["Corey Harris","Daily Bread","Daily Bread","","DailyBread.jpg"];
+		songs[36] = ["Carlene Davis","Healing Rain","True Worship","","TrueWorship.jpg"];
+		songs[37] = ["Donna Marie","God so Love the World","Reggae Hits Sunday Service, Vol 1","","ReggaeHitsSundayServiceVol1.jpg"];
+		songs[38] = ["Donna Marie","Bless His Holy Name","Reggae Hits Sunday Service, Vol 1","","ReggaeHitsSundayServiceVol1.jpg"];
+		songs[39] = ["Junior Tucker & Carlene Davis","Lord I Lift Your Name on High","Reggae Hits Sunday Service, Vol 1","","ReggaeHitsSundayServiceVol1.jpg"];
+		songs[40] = ["E-Mac-U-Let","Jesus Be a Fence","Keep the Faith and Believe","","KeeptheFaithandBelieve.jpg"];
+		songs[41] = ["Carlene Davis","Give Thanks","True Worship","","TrueWorship.jpg"];
+		songs[42] = ["DJ Nicholas","Thank You","School of Volume","","SchoolofVolume.jpg"];
 
 
 		//private function
@@ -1233,13 +1238,8 @@
 		
 		//private function
 		function sortArtists(){
-		    var Artist = 0;
-		    var sorted = [];
-		    var i = 0;
-		    sorted[i] = songs[i];
-		    for(i = 1; i < songs.length; i++) {
-		       sorted = bubbleSort(sorted, songs[i], sorted.length, Artist);
-		    }
+		    var sorted = songs; 
+		    sorted.sort();
 		    return sorted;
 		}
 		return {
@@ -1252,12 +1252,15 @@
 			getLyrics: function() {
 				var localSongs = sortSongs();
 				var i = 0;
+				var addIndex = 0; //index for adding to songsWithLyrics
 				var songsWithLyrics = [];
 				for(i; i < localSongs.length; i++) {
-					if(localSongs[i][2] != ""){
-						songsWithLyrics[i] = localSongs[i];
+					if(localSongs[i][3] !== ""){
+						songsWithLyrics[addIndex] = localSongs[i];
+						addIndex++;
 					}
 				}
+				return songsWithLyrics;
 			}
 		};
 	});

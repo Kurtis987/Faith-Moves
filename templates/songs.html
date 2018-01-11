@@ -1,9 +1,13 @@
 <div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-		 
-		<div ng-repeat="song in songs">{{song[0]}} - {{song[1]}}</div>
-			
-		</div>
-	</div>
+    <div class="row">
+        <div class="flex-container">
+            <div class="song-container" ng-repeat="song in songs">
+                <img class="album-art" ng-src="img/Album/{{song[4]}}" alt="{{song[2]}}" height="145" width="145">
+                <h4 class="song-info">Album - <em>{{song[2]}}</em></h4><br>
+                <h4 class="song-info">Song - <em>{{song[1]}}</em></h4><br>
+                <h5 class="song-info">By: {{song[0]}}</h5>
+            </div>
+
+        </div>
+    </div>
 </div>

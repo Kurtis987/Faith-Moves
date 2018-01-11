@@ -72,7 +72,6 @@ angular.module('RouteControllers', [])
 		$scope.page = $routeParams.id;
 
 		$scope.artistPage = function(id) {
-			alert("made it");
 			$location.path("/artists/" + id);
 		};
 
@@ -96,10 +95,7 @@ angular.module('RouteControllers', [])
 		};
 		getImg();
 
-	})
-	.controller('LyricsController', function($scope, $location) {
-
-	})
+	}) 
 	.controller('LyricsController', function($scope, $location, SongFactory) {
 		$scope.lyrics = SongFactory.getLyrics();
 		//scroll to top of active panel
@@ -112,7 +108,11 @@ angular.module('RouteControllers', [])
 		});
 	}) 
 	.controller('PrayerController', function($scope, $location) {
-
+		$scope.submit = function() {
+			if ($scope.prayerForm.$valid) {
+				alert('Thank you ' + $scope.firstName +".\n" + "Your prayer has been sent.");
+			}
+		};
 	})
 	.controller('SongsController', function($scope, $location, SongFactory) {
 		
