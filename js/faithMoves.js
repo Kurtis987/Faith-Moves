@@ -51,6 +51,41 @@ function selectStyle() {
     //bootstrap seems to size accourding to innerWidth it is also the width Chrome reports
     var responsive_width = window.innerWidth;
     //$(window).width() is the width used for my custom breakpoint and is the actual width
+    console.log("responsive: "+ responsive_width);
+    console.log("window: "+ $(window).width());
+
+    var browser = navigator.userAgent;
+    if(browser.search("Edge") == -1)
+    {
+        console.log("not edge");
+
+    } 
+    else if(browser.search("NET CLR") != -1){
+        console.log("ie");
+    }
+    else if(browser.search("Edge") != -1 && $(window).width() <= 503 )
+    {
+        console.log("Edge test passed")
+    }
+    else if(browser.search("Edge") == -1 && responsive_width < 521)
+    {
+        console.log("Catching chrome test");
+    }
+    else
+    {
+        console.log(browser.search("Edge"));
+        console.log(browser);
+        console.log("Edge");
+    }
+
+    if(browser.search("Edge") == -1 && responsive_width < 521 
+        || browser.search("Edge") != -1 && $(window).width() <= 503 || 
+        $(window).width() < 504 && browser.search("NET CLR") != -1) {
+        $('.player').addClass("player-small-screen");
+    }
+    else{
+        $('.player').removeClass("player-small-screen");
+    }
     if(responsive_width <= 767) {
         //screen is < 768px switch to glyphicon-plus
         $("span.caret").removeClass("caret").addClass("glyphicon").addClass("glyphicon-plus");
