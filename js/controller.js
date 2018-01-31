@@ -110,7 +110,9 @@ angular.module('RouteControllers', [])
 	.controller('PrayerController', function($scope, $location) {
 		$scope.submit = function() {
 			if ($scope.prayerForm.$valid) {
-				alert('Thank you ' + $scope.firstName +".\n" + "Your prayer has been sent.");
+				$('#myModal').modal('toggle');
+				
+				//alert('Thank you ' + $scope.firstName +".\n" + "Your prayer has been sent.");
 			}
 		};
 	})
