@@ -88,6 +88,17 @@ div#song-title_live365 {
     padding-top: 3px; 
 }
 
+div.verse {
+	 width: 60%;
+	 margin: 10px auto;
+	 padding: 10px;
+	 border-left: 1px solid grey;
+}
+
+div.verse:hover {
+ 	box-shadow: -5px 6px 5px 5px grey;
+}
+
 .dropdown-menu {
 	background-color: #f0f8ff;
 }
@@ -411,6 +422,10 @@ input[type="range"]::-ms-thumb {
 	footer {
 		padding: 15px 40px;
 	}
+	.heading-wrapper {
+		width: 60%;
+	 	margin: 10px auto; 
+	}
 	img#logo_live365 { 
 		float: right;
 	    padding-right: 55px;
@@ -434,6 +449,15 @@ input[type="range"]::-ms-thumb {
 	}
 	ul.nav > li {
 		border: 0;
+	}
+
+	.verse-heading {
+		display: inline-block;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 
 }

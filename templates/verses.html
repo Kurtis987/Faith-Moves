@@ -1,13 +1,19 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-			<h1> Verse of the Day </h1>
-			<h3 ng-bind-html="VerseOfDay[0]"></h3>
-			<p ng-bind-html="VerseOfDay[1]"></p>
+			<div class="heading-wrapper">
+				<h1 class="verse-heading"> Verse of the Day </h1>
+			</div> 
+			<div class="verse">
+				<h3 ng-bind-html="VerseOfDay[0]"></h3>
+				<p ng-bind-html="VerseOfDay[1]"></p>
+			</div>
 
-
-			<h2>Verses</h2>
-			<div ng-repeat="verse in verses">
+			
+			<div class="heading-wrapper">
+				<h2 class="verse-heading">Verses</h2>
+			</div>
+			<div class="verse" ng-repeat="verse in verses">
 				<h3 ng-bind-html="verse[0]"></h3>
 				<p ng-bind-html="verse[1]"></p>
 			</div> 
