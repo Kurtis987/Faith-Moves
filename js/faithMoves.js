@@ -55,12 +55,7 @@ function selectStyle() {
     console.log("window: "+ $(window).width());
 
     var browser = navigator.userAgent;
-    if(browser.search("Edge") == -1)
-    {
-        console.log("not edge");
-
-    } 
-    else if(browser.search("NET CLR") != -1){
+    if(browser.search("NET CLR") != -1){
         console.log("ie");
     }
     else if(browser.search("Edge") != -1 && $(window).width() <= 503 )
@@ -78,7 +73,7 @@ function selectStyle() {
         console.log("Edge");
     }
 
-    if(browser.search("Edge") == -1 && responsive_width < 521 
+    if(browser.search("Edge") == -1 && browser.search("NET CLR") == -1 && responsive_width < 521 
         || browser.search("Edge") != -1 && $(window).width() <= 503 || 
         $(window).width() < 504 && browser.search("NET CLR") != -1) {
         $('.player').addClass("player-small-screen");

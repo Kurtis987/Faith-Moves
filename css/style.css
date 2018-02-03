@@ -28,6 +28,10 @@ body {
 	right: 33px; 
 }
 
+.carousel-caption {
+	visibility: hidden;
+}
+
 .container-fluid.artist-container {
 	padding: 0 15px;
 	max-width: 1150px;
@@ -387,6 +391,9 @@ input[type="range"]::-ms-thumb {
 @media(min-width: 521px){
 	img#logo_live365 { 
 		float: right; 
+	}
+	.carousel-caption {
+		visibility: visible;
 	}
 }
 
