@@ -96,7 +96,7 @@ function selectStyle() {
         
     }
     //have to use a combination of width commands to achieve affect here
-    if($(window).width() <= 805 && responsive_width > 767)
+    if($(window).width() <= 776 && responsive_width > 767)
     {
         $('.player').addClass('player-avoid-menu');
     }

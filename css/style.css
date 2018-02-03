@@ -428,7 +428,7 @@ input[type="range"]::-ms-thumb {
 	}
 	img#logo_live365 { 
 		float: right;
-	    padding-right: 55px;
+	    padding-right: 40px;
 	}
 	.nav > li > a {
 		padding: 26px 15px;
@@ -438,7 +438,7 @@ input[type="range"]::-ms-thumb {
 		padding-left: 40px;
 	}
 	.navbar-collapse { 
-		padding-right: 25px;
+		padding-right: 10px;
 	}
 	.navbar-right .dropdown-menu {
 		left: 0;
