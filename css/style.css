@@ -28,6 +28,10 @@ body {
 	right: 33px; 
 }
 
+.carousel-caption {
+	visibility: hidden;
+}
+
 .container-fluid.artist-container {
 	padding: 0 15px;
 	max-width: 1150px;
@@ -93,10 +97,6 @@ div.verse {
 	 margin: 10px auto;
 	 padding: 10px;
 	 border-left: 1px solid grey;
-}
-
-div.verse:hover {
- 	box-shadow: -5px 6px 5px 5px grey;
 }
 
 .dropdown-menu {
@@ -244,13 +244,19 @@ nav {
 	white-space: pre-line;
 }
 .player {
+	float: left; 
+	padding-left: 30px;
+	padding-bottom: 8px;
+}
+/*
+.player {
 	position: relative;
     left: 327px;
     top: -57.5px;
     z-index: 10000;
     width: 60px;
 }
-
+*/
 .player-avoid-menu {
 	left: 562px;
 }
@@ -258,6 +264,7 @@ nav {
 .player-small-screen  {
 	top: -78px;
 }
+
 
 #prayer-request {
 	margin-bottom: 30px;	
@@ -269,7 +276,8 @@ nav {
 }
 
 .row.radio-bar {
-	margin: 0px;
+	background-color: #10354e;
+	margin: 0;
 }
 
 .song-container {
@@ -383,10 +391,37 @@ input[type="range"]::-ms-thumb {
  background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
 }
 
+@media(min-width: 436px){
+	div.verse:hover {
+ 			box-shadow: -5px 6px 5px 5px grey;
+	}
+	.player {
+		padding-left: 0;
+		position: relative;
+	    left: 327px;
+	    top: -57.5px;
+	    z-index: 10000;
+	    width: 60px;
+	} 
+	.player-avoid-menu {
+		left: 562px;
+	}
+
+	.player-small-screen  {
+			top: -78px;
+	}
+	.row.radio-bar {
+		background-color: white;
+	}
+	
+}
 
 @media(min-width: 521px){
 	img#logo_live365 { 
 		float: right; 
+	}
+	.carousel-caption {
+		visibility: visible;
 	}
 }
 
@@ -428,7 +463,7 @@ input[type="range"]::-ms-thumb {
 	}
 	img#logo_live365 { 
 		float: right;
-	    padding-right: 55px;
+	    padding-right: 40px;
 	}
 	.nav > li > a {
 		padding: 26px 15px;
@@ -438,7 +473,7 @@ input[type="range"]::-ms-thumb {
 		padding-left: 40px;
 	}
 	.navbar-collapse { 
-		padding-right: 25px;
+		padding-right: 10px;
 	}
 	.navbar-right .dropdown-menu {
 		left: 0;

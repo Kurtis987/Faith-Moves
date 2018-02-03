@@ -13,21 +13,15 @@ $(document).ready(function() {
 });
 
 
-
 function selectStyle() { 
     //bootstrap seems to size accourding to innerWidth it is also the width Chrome reports
     var responsive_width = window.innerWidth;
     //$(window).width() is the width used for my custom breakpoint and is the actual width
-    console.log("responsive: "+ responsive_width);
-    console.log("window: "+ $(window).width());
+    //console.log("responsive: "+ responsive_width);
+    //console.log("window: "+ $(window).width());
 
     var browser = navigator.userAgent;
-    if(browser.search("Edge") == -1)
-    {
-        console.log("not edge");
-
-    } 
-    else if(browser.search("NET CLR") != -1){
+    /*if(browser.search("NET CLR") != -1){
         console.log("ie");
     }
     else if(browser.search("Edge") != -1 && $(window).width() <= 503 )
@@ -43,9 +37,9 @@ function selectStyle() {
         console.log(browser.search("Edge"));
         console.log(browser);
         console.log("Edge");
-    }
+    }*/
 
-    if(browser.search("Edge") == -1 && responsive_width < 521 
+    if(browser.search("Edge") == -1 && browser.search("NET CLR") == -1 && responsive_width < 521 
         || browser.search("Edge") != -1 && $(window).width() <= 503 || 
         $(window).width() < 504 && browser.search("NET CLR") != -1) {
         $('.player').addClass("player-small-screen");
@@ -63,7 +57,7 @@ function selectStyle() {
         
     } 
     //have to use a combination of width commands to achieve affect here
-    if($(window).width() <= 805 && responsive_width > 767)
+    if($(window).width() <= 776 && responsive_width > 767)
     {
         $('.player').addClass('player-avoid-menu');
     }

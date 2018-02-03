@@ -61,16 +61,12 @@ angular.module('FaithMovesApp').config(function($locationProvider, $routeProvide
 	})
 	.when('/about', {
 		templateUrl: 'templates/about.html',
-		controller: 'AboutController'
+		controller: 'HomeController'
 	})
 	.when('/artists', {
 		templateUrl: 'templates/artists.html',
 		controller: 'ArtistsController'
-	})
-	.when('/artists', {
-		templateUrl: 'templates/artists.html',
-		controller: 'ArtistsController'
-	})
+	}) 
     .when('/artists/:id', {
        	templateUrl: 'templates/artists/artist-info.html',
         controller: 'ArtistsController'
@@ -93,6 +89,6 @@ angular.module('FaithMovesApp').config(function($locationProvider, $routeProvide
 	})
 	.when('/verses', {
 		templateUrl: 'templates/verses.html',
-		controller: 'VersesController'
+		controller: 'HomeController'
 	});
 });
