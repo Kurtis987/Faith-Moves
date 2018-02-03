@@ -18,14 +18,15 @@ angular.module('RouteControllers', [])
 		$scope.play = function() {
 			if ($scope.player.paused) {
 				$scope.player.play();
+				//$("span.glyphicon-play").removeClass("glyphicon-play").addClass("glyphicon-pause");
+				$("#play-button").html('<span class="glyphicon glyphicon-stop"></span> Stop');
 			} else {
 				$scope.player.pause();
+				//$("span.glyphicon-pause").removeClass("glyphicon-pause").addClass("glyphicon-play");
+				$("#play-button").html('<span class="glyphicon glyphicon-play"></span> Play');
 			}
 		};
-	})
-	.controller('AboutController', function($scope, $location) {
-
-	})
+	}) 
 	.controller('ArtistsController', function($scope, $location, $routeParams) {
 		$scope.Artists = [];
 		$scope.Artists[0] = ["Avion Blackman", "AvionBlackman.jpg",
@@ -120,6 +121,4 @@ angular.module('RouteControllers', [])
 		
 		$scope.songs = SongFactory.getSongs();
  
-	})
-	.controller('VersesController', function($scope, $location) {
 	});
