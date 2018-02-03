@@ -99,10 +99,6 @@ div.verse {
 	 border-left: 1px solid grey;
 }
 
-div.verse:hover {
- 	box-shadow: -5px 6px 5px 5px grey;
-}
-
 .dropdown-menu {
 	background-color: #f0f8ff;
 }
@@ -248,13 +244,19 @@ nav {
 	white-space: pre-line;
 }
 .player {
+	float: left; 
+	padding-left: 30px;
+	padding-bottom: 8px;
+}
+/*
+.player {
 	position: relative;
     left: 327px;
     top: -57.5px;
     z-index: 10000;
     width: 60px;
 }
-
+*/
 .player-avoid-menu {
 	left: 562px;
 }
@@ -262,6 +264,7 @@ nav {
 .player-small-screen  {
 	top: -78px;
 }
+
 
 #prayer-request {
 	margin-bottom: 30px;	
@@ -273,7 +276,8 @@ nav {
 }
 
 .row.radio-bar {
-	margin: 0px;
+	background-color: #10354e;
+	margin: 0;
 }
 
 .song-container {
@@ -308,7 +312,7 @@ ul.nav > li {
 	border-bottom: 1px solid lightblue;
 }
 
-/*lines 295-370 credited to https://codepen.io/aronwoost/pen/nlyrf */
+/*slider styling credited to https://codepen.io/aronwoost/pen/nlyrf */
 
 #volume {
 	width: 60px;
@@ -387,6 +391,30 @@ input[type="range"]::-ms-thumb {
  background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
 }
 
+@media(min-width: 436px){
+	div.verse:hover {
+ 			box-shadow: -5px 6px 5px 5px grey;
+	}
+	.player {
+		padding-left: 0;
+		position: relative;
+	    left: 327px;
+	    top: -57.5px;
+	    z-index: 10000;
+	    width: 60px;
+	} 
+	.player-avoid-menu {
+		left: 562px;
+	}
+
+	.player-small-screen  {
+			top: -78px;
+	}
+	.row.radio-bar {
+		background-color: white;
+	}
+	
+}
 
 @media(min-width: 521px){
 	img#logo_live365 { 
