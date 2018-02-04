@@ -78,14 +78,14 @@ angular.module('RouteControllers', [])
 
 		var getImg = function() { 
 			var path = $location.path();
-			if(path != "/artists")
+			if(path != "/Faith-Moves/artists")
 			{ 
 				$('.artist-name').text($scope.page);
 				var artist;
 				for (artist in $scope.Artists) { 
 					if($scope.page.localeCompare($scope.Artists[artist][0]) == 0)
 					{
-						$('.artist-img').attr("src", "/img/Artists/"+$scope.Artists[artist][1]);
+						$('.artist-img').attr("src", "/Faith-Moves/img/Artists/"+$scope.Artists[artist][1]);
 						if($scope.Artists[artist][4] == "square") {
 							$('.artist-img').addClass("square");
 						}
