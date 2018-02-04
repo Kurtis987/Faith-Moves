@@ -73,7 +73,7 @@ angular.module('RouteControllers', [])
 		$scope.page = $routeParams.id;
 
 		$scope.artistPage = function(id) {
-			$location.path("/artists/" + id);
+			$location.path("/Faith-Moves/artists/" + id);
 		};
 
 		var getImg = function() { 
