@@ -17,12 +17,10 @@ angular.module('RouteControllers', [])
         });
 		$scope.play = function() {
 			if ($scope.player.paused) {
-				$scope.player.play();
-				//$("span.glyphicon-play").removeClass("glyphicon-play").addClass("glyphicon-pause");
+				$scope.player.play(); 
 				$("#play-button").html('<span class="glyphicon glyphicon-stop"></span> Stop');
 			} else {
-				$scope.player.pause();
-				//$("span.glyphicon-pause").removeClass("glyphicon-pause").addClass("glyphicon-play");
+				$scope.player.pause(); 
 				$("#play-button").html('<span class="glyphicon glyphicon-play"></span> Play');
 			}
 		};
@@ -424,25 +422,31 @@ angular.module('RouteControllers', [])
 		'<h3>Source</h3>'+
 		'"Owen Uriah Bio". Retrieved from <a href="http://dubroom.org/starrecordings/owen_uriah_biography.htm">http://dubroom.org/starrecordings/owen_uriah_biography.htm</a>'];
 
+		//get artist from id
 		$scope.page = $routeParams.id;
 
 		$scope.artistPage = function(id) {
+			//set page to the artist page
 			$location.path("/artists/" + id); 
 		};
 
 		var getImg = function() { 
 			var path = $location.path(); 
+			//if were not on main artist page get info for individual artist
 			if(path != "/artists")
 			{ 
 				$('.artist-name').text($scope.page);
 				var artist;
 				for (artist in $scope.Artists) { 
+					//search for the correct artist
 					if($scope.page.localeCompare($scope.Artists[artist][0]) == 0)
 					{
+						//set artist img and make it square if appropriate
 						$('.artist-img').attr("src", "/Faith-Moves/img/Artists/"+$scope.Artists[artist][1]);
 						if($scope.Artists[artist][4] == "square") {
 							$('.artist-img').addClass("square");
 						}
+						//set artist biography
 						$('.artist-bio').html($scope.Artists[artist][5]);
 						break;
 					}
