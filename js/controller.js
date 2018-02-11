@@ -442,7 +442,7 @@ angular.module('RouteControllers', [])
 					if($scope.page.localeCompare($scope.Artists[artist][0]) == 0)
 					{
 						//set artist img and make it square if appropriate
-						$('.artist-img').attr("src", "/Faith-Moves/img/Artists/"+$scope.Artists[artist][1]);
+						$('.artist-img').attr("src", "/faith-moves/img/Artists/"+$scope.Artists[artist][1]);
 						if($scope.Artists[artist][4] == "square") {
 							$('.artist-img').addClass("square");
 						}
