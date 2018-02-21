@@ -18,10 +18,12 @@ angular.module('RouteControllers', [])
 		$scope.play = function() {
 			if ($scope.player.paused) {
 				$scope.player.play(); 
-				$("#play-button").html('<span class="glyphicon glyphicon-stop"></span> Stop');
+				$("#play-button").html('<span class="glyphicon glyphicon-volume-off"></span> Mute');
+				$scope.player.volume = $scope.value;
 			} else {
 				$scope.player.pause(); 
 				$("#play-button").html('<span class="glyphicon glyphicon-play"></span> Play');
+				$scope.player.volume = .0;
 			}
 		};
 	}) 
