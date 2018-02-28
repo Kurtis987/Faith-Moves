@@ -9,6 +9,7 @@ angular.module('RouteControllers', [])
 	.controller('RadioController', function($scope) {
 		selectStyle();
 		$scope.value = .5;
+		$scope.playing = false;
 		$scope.player = document.getElementById("player");
 		$scope.player.volume = $scope.value;
 		$scope.$watch(function(){return $scope.value;},
@@ -16,12 +17,13 @@ angular.module('RouteControllers', [])
                  $scope.player.volume = newValue;
         });
 		$scope.play = function() {
-			if ($scope.player.paused) {
+			if (!$scope.playing) {
+				$scope.playing = true;
 				$scope.player.play(); 
 				$("#play-button").html('<span class="glyphicon glyphicon-volume-off"></span> Mute');
 				$scope.player.volume = $scope.value;
 			} else {
-				$scope.player.pause(); 
+				$scope.playing = false;
 				$("#play-button").html('<span class="glyphicon glyphicon-play"></span> Play');
 				$scope.player.volume = .0;
 			}
