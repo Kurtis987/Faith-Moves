@@ -10,14 +10,20 @@ angular.module('RouteControllers', [])
 		selectStyle();
 		$scope.value = .5;
 		$scope.playing = false;
+		$scope.neverClicked = true;
 		$scope.player = document.getElementById("player");
 		$scope.player.volume = $scope.value;
 		$scope.$watch(function(){return $scope.value;},
               function (newValue, oldValue) {
                  $scope.player.volume = newValue;
+                 if($("#play-button > span").hasClass("glyphicon-play") && !$scope.neverClicked) {
+                 	$("#play-button").html('<span class="glyphicon glyphicon-volume-off"></span> Mute');
+                 	$scope.playing = true;
+                 }
         });
 		$scope.play = function() {
 			if (!$scope.playing) {
+				$scope.neverClicked = false;
 				$scope.playing = true;
 				$scope.player.play(); 
 				$("#play-button").html('<span class="glyphicon glyphicon-volume-off"></span> Mute');
