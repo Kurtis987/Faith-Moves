@@ -43,6 +43,6 @@ The original styling was a much larger widget.
 - [AngularJS](https://angularjs.org/)
     - I use **AngularJS** to handle page routing, 
 - [Bootstrap](http://getbootstrap.com/)
-    - I use **Bootstrap** to give our project a simple, responsive layout 
+    - I use **Bootstrap** to give my project a simple, responsive layout 
 
 ## Testing
